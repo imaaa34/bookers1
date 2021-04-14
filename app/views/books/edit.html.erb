@@ -9,13 +9,19 @@
 
 <%= form_with model:@book, local:true do |f| %>
 
-<h2>Title:</h2>
-<%= f.text_field :title %>
+<div class="input">
+  <label>Title:</label>
+  <%= f.text_field :title %>
+</div>
 
-<h2>Body:</h2>
-<%= f.text_area :body %>
+<div class="input">
+  <label>Body:</label>
+  <%= f.text_area :body %>
+</div>
 
-<%= f.submit 'Update Book' %>
+<div class="submit">
+  <%= f.submit 'Update Book' %>
+</div>
 
 <% end %>
 

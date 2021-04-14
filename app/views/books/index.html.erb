@@ -1,8 +1,9 @@
-<h1>Books</h1>
+<h2>Books</h2>
+
 <table>
     <tr>
-        <th>Title</th>
-        <th>Body</th>
+        <th class="tb-title">Title</th>
+        <th class="tb-body">Body</th>
         <th></th>
     </tr>
     <% @books.each do |book| %>
@@ -29,14 +30,21 @@
     <% end %>
 <% end %>
 
+
 <%= form_with model:@book, local:true do |f| %>
 
+  <div class="input">
     <label>Title</label>
     <%= f.text_field :title %>
+  </div>
 
+  <div class="input">
     <label>Body</label>
     <%= f.text_area :body %>
+  </div>
 
+  <div class="submit">
     <%= f.submit 'Create Book' %>
+  </div>
 
 <% end %>

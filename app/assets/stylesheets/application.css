@@ -13,3 +13,51 @@
  *= require_tree .
  *= require_self
  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+/* 共通部分 */
+
+body {
+  margin: 30px;
+  font-size: 13px;
+}
+
+
+/* homes/top */
+h1 {
+  margin: 15px 0;
+}
+
+p {
+  margin: 10px 30px;
+}
+
+
+/* books/index/edit/show */
+table {
+  margin: 15px 0 20px;
+}
+
+.tb-title {
+  width: 200px;
+}
+
+.tb-body {
+  width: 400px;
+}
+
+label {
+  display: block;
+}
+
+.input {
+  margin-top: 15px;
+}
+
+.submit {
+  margin: 15px 0;
+}
