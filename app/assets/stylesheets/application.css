@@ -61,3 +61,13 @@ label {
 .submit {
   margin: 15px 0;
 }
+
+
+/* flash */
+ .alert {
+   color: red;
+ }
+
+ .notice {
+   color: green;
+ }
