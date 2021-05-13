@@ -17,7 +17,7 @@ RSpec.describe Book, "モデルに関するテスト", type: :model do
     it "bodyが空白の場合にバリデーションチェックされ空白のエラーメッセージが返ってきているか" do
       book = Book.new(title: 'hoge', body:'')
       expect(book).to be_invalid
-      expect(book.errors[:body]).to include("can't be blank")
+      expectcd(book.errors[:body]).to include("can't be blank")
     end
   end
   feature "titleを空白で投稿した場合に画面にエラーメッセージが表示されているか" do
